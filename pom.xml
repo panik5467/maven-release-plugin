@@ -4,11 +4,14 @@
 	<artifactId>maven-release-plugin-example</artifactId>
 	<version>0.2-SNAPSHOT</version>
 	<scm>
-		<url>https://github.com/arpitaggarwal/maven-release-plugin-example</url>
-		<connection>scm:git:https://github.com/arpitaggarwal/maven-release-plugin-example.git</connection>
+		<url>https://github.com/panik5467/maven-release-plugin</url>
+		<connection>scm:git:https://github.com/panik5467/maven-release-plugin.git</connection>
       <tag>HEAD</tag>
   </scm>
-	
+<properties>
+   <project.scm.id>git</project.scm.id>
+</properties>
+
 	<!-- Repository Information -->
 	<distributionManagement>
 		<repository>
