@@ -6,7 +6,7 @@
 	<scm>
 		<url>https://github.com/panik5467/maven-release-plugin</url>
 		<connection>scm:git:https://github.com/panik5467/maven-release-plugin.git</connection>
-      <tag>v${releaseVersion}</tag>
+      <tag>HEAD</tag>
   </scm>
 <properties>
    <project.scm.id>git</project.scm.id>
