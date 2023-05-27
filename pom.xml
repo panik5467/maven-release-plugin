@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.test</groupId>
 	<artifactId>maven-release-plugin-example</artifactId>
-	<version>0.3.2-SNAPSHOT</version>
+	<version>0.3.0-SNAPSHOT</version>
 	<scm>
 		<url>https://github.com/panik5467/maven-release-plugin</url>
 		<connection>scm:git:https://github.com/panik5467/maven-release-plugin.git</connection>
@@ -15,9 +15,10 @@
 	<!-- Repository Information -->
 	<distributionManagement>
 		<repository>
-			<id>nexus-releases</id>
-			<!-- http://localhost:8081/repository/<repository-name> -->
-			<url>http://localhost:8081/repository/api-release</url>
+			<!-- <id>nexus-releases</id>
+			<repository-name>http://localhost:8081/repository/<repository-name>
+			<url>http://localhost:8081/repository/api-release</url> -->
+			<url>C:/MyPrograms/apache-maven-3.6.3/my-local-repo</url>
 		</repository>
 	</distributionManagement>
 	<profiles>
@@ -66,9 +67,9 @@
 							</execution>
 						</executions>
 						<configuration>
-							<serverId>nexus-releases</serverId>
+							<!-- <serverId>nexus-releases</serverId>
 							<nexusUrl>http://localhost:8081/</nexusUrl>
-							<skipStaging>true</skipStaging>
+							<skipStaging>true</skipStaging> -->
 						</configuration>
 					</plugin>
 				</plugins>
