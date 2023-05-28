@@ -16,9 +16,9 @@ mvn release:clean
 
 ### Preparing the Release
 
-1. Perform some checks – there should be no uncommitted changes and the project should depend on no SNAPSHOT dependencies
+1. Perform some checks â€“ there should be no uncommitted changes and the project should depend on no SNAPSHOT dependencies
 
-2. Change the version of the project in the pom file to a full release number (remove SNAPSHOT suffix) – in our example – 0.1
+2. Change the version of the project in the pom file to a full release number (remove SNAPSHOT suffix) â€“ in our example â€“ 0.1
 
 3. Run the project test suites
 
@@ -26,7 +26,7 @@ mvn release:clean
 
 5. Create the tag out of this non-SNAPSHOT versioned code
 
-6. Increase the version of the project in the pom – in our example – 0.2-SNAPSHOT
+6. Increase the version of the project in the pom â€“ in our example â€“ 0.2-SNAPSHOT
 
 7. Commit and push the changes
 
@@ -46,7 +46,7 @@ mvn release:prepare -DdryRun=true
 
 2. Build and deploy released code
 
-3. Relies on the output of the Prepare step – the `release.properties`.
+3. Relies on the output of the Prepare step â€“ the `release.properties`.
 
 
 ```
@@ -83,6 +83,8 @@ curl -v --user admin:admin123 --upload-file <filename> http://localhost:8081/rep
 
 ```
 mvn release:clean release:prepare release:perform -DreleaseVersion=0.1 -DdevelopmentVersion=0.2-SNAPSHOT
+
+mvn release:clean release:prepare release:perform -B -DreleaseVersion=0.1.0 -DtagName=0.1.0 -DdevelopmentVersion=0.1.1-SNAPSHOT -s settings.xml
 ```
 
 Reference: http://www.baeldung.com/maven-release-nexus
