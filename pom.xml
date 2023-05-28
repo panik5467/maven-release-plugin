@@ -35,7 +35,7 @@
 				<version>3.0.0</version>
 				<configuration>
 				    <!-- <tag>v${releaseVersion}</tag> -->
-					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<tagNameFormat>TAG-@{project.version}</tagNameFormat>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<!-- releaseProfiles configuration will actually force a Maven profile 
 						– the `releases` profile – to become active during the Release process. -->
