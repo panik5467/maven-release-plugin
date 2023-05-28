@@ -4,7 +4,6 @@
 	<artifactId>maven-release-plugin-example</artifactId>
 	<version>0.3.6-SNAPSHOT</version>
 	<scm>
-		<url>https://github.com/panik5467/maven-release-plugin</url>
 		<connection>scm:git:https://github.com/panik5467/maven-release-plugin.git</connection>
       <tag>v0.3.6</tag>
   </scm>
