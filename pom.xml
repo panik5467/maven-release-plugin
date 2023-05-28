@@ -2,10 +2,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.test</groupId>
 	<artifactId>maven-release-plugin-example</artifactId>
-	<version>0.3.6</version>
+	<version>0.3.7-SNAPSHOT</version>
 	<scm>
 		<connection>scm:git:https://github.com/panik5467/maven-release-plugin.git</connection>
-      <tag>v0.3.6</tag>
+      <tag>HEAD</tag>
   </scm>
 <properties>
    <project.scm.id>git</project.scm.id>
